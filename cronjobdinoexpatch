@@ -1,0 +1,23 @@
+######################################################
+##                                                  ##
+##  XDCCMANAGE                                      ##
+##                                                  ##
+##  Aggiungengo ai crontab il comando che trovate   ##
+##  alla fine di questo file, andremo ad aggirare   ##
+##  il problema riguardante la caduta dei bot.      ##
+##                                                  ##
+##  Per aggiungere il comando ai crontab, date      ##
+##  da terminale(non da root) il seguente comando:  ##
+##  crontab -e                                      ##
+##                                                  ##
+##  Sito: http://xdccmanage.altervista.org/         ##
+##  Irc: //server -m irc.chlame.net -j #xdccManage  ##
+##                                                  ##
+##  02 Dicembre 2011                                ##
+##  Autore: puccio                                  ##
+##                                                  ##
+######################################################
+
+Riga da aggiungere:
+
+0,30 * * * * ps -e | grep iroffer | awk '{ system("kill -USR2 " $1); }' > /dev/null 2>&1

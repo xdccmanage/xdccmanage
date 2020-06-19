@@ -1,0 +1,443 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 13px;
+	font-family: Verdana,Tahoma,sans-serif;
+	padding-bottom: 30px;
+}
+
+#page-wrap {
+	min-width: 780px;
+	max-width: 100%;
+}
+
+#sub-main-ricerca {
+	display: none;
+}
+
+#ancora {
+	display: none;
+	width: 30px;
+	height: 28px;
+	border: 2px solid #000;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	color: #000;
+	background: #32ba28;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 40px;
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-left: 4px;
+	padding-bottom: 8px;
+	margin: 3px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#tags {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#tags a {
+	text-decoration: none;
+}
+
+#tags a:hover {
+	text-decoration: underline;
+}
+
+#search {
+	width: 780px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #007888;
+	text-align: center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#button {
+	height: 28px;
+	width: 120px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 0px;
+	padding: 2px;
+	border: 0 none;
+	background: #00343a;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#query {
+	height: 28px;
+	width: 620px;
+	margin: 10px;
+	border: 0 none;
+	outline: none;
+	background: #fff;
+	padding-left: 4px;	
+	font-size: 18px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#main-content {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/********** VETRINA **********/
+#container_vetrina {
+	display: block;
+}
+
+.vetrina {
+	margin: 20px;
+}
+
+.vetrina td {
+	background: #fff;
+	border: 1px solid #007888;
+	border-top: 0px;
+	border-left: 0px;
+	padding: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.vetrina td.titolovetrina {
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	background: #007888;	
+	padding-top: 4px;
+}
+
+.vetrina td.datavetrina {
+	background: #007888;
+	text-align: center;
+	white-space: nowrap;
+	font-family: Georgia, sans-serif;
+	font-style: italic;
+	padding-top: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.vetrina td.datavetrina .day {
+	font-size: 20px;
+	font-weight: bold;
+	color: #32ba28;
+}
+
+.vetrina td.datavetrina .month {
+	text-transform: uppercase;
+	font-size: 9px;
+	position: relative;
+	top: -6px;
+	font-weight: bold;
+}
+
+.vetrina td.padding {
+	border: 0 none;
+	background: transparent;
+}
+
+.vetrina td a.titolo {
+	color: #000;
+	text-decoration: none;
+}
+
+.vetrina td a.titolo:hover {
+	text-decoration: underline;
+}
+
+.vetrina td div {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.vetrina td div a {
+	text-decoration: none;
+	padding: 1px 3px;
+	border: 1px solid #459A00;
+	background: #5CCD00;
+	color: #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* specifica qui i colori dei singoli titoli in vetrina per posizione */
+/*
+.vetrina td a.pos0 {
+	color: blue;
+}
+
+.vetrina td a.pos1 {
+	color: red;
+}
+*/
+
+/*********** LISTA E RICERCA **********/
+.lista {
+	background: none;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	border-collapse: collapse;		/* rimuove lo spazio tra le celle */
+	margin-top: 10px;
+	margin-bottom: 20px;
+	-webkit-border-top-left-radius: 14px;
+	-webkit-border-top-right-radius: 14px;
+	-moz-border-radius-topleft: 14px;
+	-moz-border-radius-topright: 14px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+/*********** NICK DEL BOT **********/
+.lista th {
+	color: #000;
+	background: #00343a;
+	font-size: 18px;
+	text-align: left;
+	padding: 10px;
+}
+
+/*********** Header Pacco	Dimen.	Data	Nome File   **********/
+.lista .header td {
+	color: #000;
+	background: #007888;
+	font-weight: bold;
+}
+
+/*********** Pacco	Dimen.	Data	Nome File   **********/
+.lista td {
+	color: #2E579B;
+	border-bottom: 1px solid #F5DFD6;
+	background: #fff;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.lista td button {
+	background: #5CCD00;
+	padding: 2px 4px;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size: 16px;
+	border: 1px solid #459A00;
+	cursor: pointer;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.lista td span {
+	font-weight: bold;
+	border: 1px solid #5CCD00;
+	padding: 3px;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+}
+
+/*********** LA DATA DEL FILE **********/
+.lista .data {
+	white-space: nowrap;
+}
+
+/*********** SE LA DATA DEL FILE E' QUELLA ODIERNA **********/
+.lista .dataOggi {
+	color: #B23C1C;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/*********** NOME DEL FILE **********/
+.lista a {
+	color: #000;
+	text-decoration: none;
+}
+
+.lista a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#altririsultati {
+	text-align: center;
+	display: block;
+}
+
+#altririsultati input {
+	width: 300px;
+	height: 40px;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.filtri {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.filtri input {
+	width: 240px;
+	height: 40px;
+	font-size: 16px;
+	color: #000;
+	border: 1px solid #459A00;
+	background: #5CCD00;
+	cursor: pointer;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.warning {
+	width: 100%;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	margin: 30px;
+}
+
+#backgroundPopup { 
+	display: none;
+	position: fixed;
+	_position: absolute;	/* hack for internet explorer 6*/
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+#popupContact {
+	display: none;
+	position: fixed;
+	_position: absolute;	/* hack for internet explorer 6*/
+	width: 640px;
+	height: 400px;
+	background: #fff;
+	border: 6px solid #007888;
+	z-index: 4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#popupContactClose {
+	background: #32ba28;
+	border: 1px solid #1c6a2e;
+	padding: 7px;
+	padding-left: 9px;
+	padding-right: 9px;
+	line-height: 13px;
+	cursor: pointer; 
+	right: -28px;
+	top: -29px;
+	position: absolute;
+	font-weight: 900;
+	display: block;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 0 2px 2px #1c6a2e;
+	-moz-box-shadow: 0 0 2px 2px #1c6a2e;
+	box-shadow: 0 0 7px 2px #1c6a2e;
+}
+
+#popupContact p {
+	text-align: center;
+	font-weight: 100;
+}
+
+#popupContact p#msg1 {
+	margin-top: 40px;
+	font-size: 18px;
+	color: #111;
+}
+
+#popupContact p#filename {
+	margin-top: 20px;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#popupContact p#msg2 {
+	margin-top: 40px;
+	font-size: 18px;
+	color: #111;
+}
+
+#popupContact p#request {
+	margin-top: 20px;
+	background: #000;
+	border-top: 1px dashed #32ba28;
+	border-bottom: 1px dashed #32ba28;
+}
+
+#popupContact p#msg3 {
+	margin-top: 45px;
+	font-size: 18px;
+	color: #111;
+	display: none;
+}
+
+#popupContact p#request input {
+	width: 100%;
+	border: none;
+	background: #000;
+	font-size: 15px;
+	color: #F5DEB3;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+#popupContact p img {
+	position: relative;
+	top: 22px;
+}
+
+#loading {
+	display: none;
+	position: fixed;
+	z-index: 4;
+}
+
+#footer {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}

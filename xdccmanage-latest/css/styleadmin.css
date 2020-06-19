@@ -1,0 +1,171 @@
+/*********** STILE ZONA AMMINISTRATIVA **********/
+#page-admin-wrap {
+	min-width: 780px;
+	max-width: 100%;
+	padding-bottom: 30px;
+	color: #000;
+}
+
+#menu {
+	text-align: center;
+	font-weight: bold;
+}
+
+#menu li {
+	display:inline;
+}
+
+#page-admin-wrap #login {
+	width: 450px;
+	border: solid 1px #a6a6a6;
+	margin: 0 auto;
+	background: #333;
+	margin-top: 80px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-moz-box-shadow: 0 0 6px #000 inset;
+	-webkit-box-shadow: 0 0 6px #000 inset;
+	box-shadow: 0 0 6px #000 inset;
+}
+
+#page-admin-wrap #login legend {
+	color: #000;
+	font-weight: bold;
+	font-size: 30px;
+	background: #fff;
+	
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#page-admin-wrap #login table {
+	background: #aaa;
+	padding: 20px;
+	margin: 20px auto;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	
+	-moz-box-shadow: 0 0 6px #2E579B inset;
+	-webkit-box-shadow: 0 0 6px #2E579B inset;
+	box-shadow: 0 0 6px #2E579B inset;
+	
+	background-image: linear-gradient(bottom, rgb(153,153,153) 17%, rgb(221,221,221) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(153,153,153) 17%, rgb(221,221,221) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(153,153,153) 17%, rgb(221,221,221) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(153,153,153) 17%, rgb(221,221,221) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(153,153,153) 17%, rgb(221,221,221) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.17, rgb(153,153,153)),
+		color-stop(1, rgb(221,221,221))
+	);
+}
+
+#page-admin-wrap #login table td {
+	text-align: right;
+	padding: 5px;
+	outline: none;
+}
+
+#page-admin-wrap #login table input {
+	font-size: 16px;
+	padding: 4px 5px;
+	border: 1px solid #2E579B;
+}
+
+#page-admin-wrap #login #loginbutton {
+	border: solid 1px #a6a6a6; 
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#page-admin-wrap .settings form {
+	margin: 0 auto;
+	min-width: 600px;
+	max-width: 700px;
+}
+
+#page-admin-wrap .settings fieldset {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #2E579B;
+	background: #e6e6e6;
+}
+
+#page-admin-wrap .settings fieldset legend {
+	border: 2px solid #2E579B;
+	padding: 4px;
+	font-weight: bold;
+	background: #fff;
+}
+
+#page-admin-wrap .settings .tabella {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#page-admin-wrap .settings .tabella td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#page-admin-wrap .settings .tabella td.desc {
+	font-size: 11px;
+}
+
+#page-admin-wrap .settings .tabella td b {
+	padding-right: 15px;
+	text-align: right;
+}
+
+#page-admin-wrap .settings .tabella td hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#page-admin-wrap .settings .tabella td input {
+	text-align: left;
+}
+
+#page-admin-wrap .settings #altririsultati {
+	text-align: center;
+	display: block;
+}
+
+#page-admin-wrap .settings #altririsultati input {
+	width: 300px;
+	height: 40px;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.warning {
+	width: 100%;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+}
